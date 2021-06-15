@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct ContactWithNumberScreen: View {
+    
+    let contactList = Person.getContactList()
+    
     var body: some View {
-        Image(systemName: "person.crop.rectangle")
-            .resizable()
-            .frame(width: 300, height: 250)
-            .opacity(0.1)
+        ZStack {
+            Image(systemName: "person.crop.rectangle")
+                .resizable()
+                .frame(width: 300, height: 250)
+                .opacity(0.1)
+            List {
+                ForEach(contactList) { person in
+                    Text(person.fullName)
+                }
+            }
+        }
         
     }
 }

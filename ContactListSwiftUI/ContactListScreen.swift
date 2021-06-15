@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct ContactListScreen: View {
+    
+    let contactList = Person.getContactList()
+    
     var body: some View {
-        Image(systemName: "person.3")
-            .resizable()
-            .frame(width: 300, height: 250)
-            .opacity(0.1)
+        ZStack {
+            Image(systemName: "person.3")
+                .resizable()
+                .frame(width: 300, height: 250)
+                .opacity(0.1)
+            Text("Placeholder")
+            List {
+                ForEach(contactList) { person in
+                    Text(person.fullName)
+                }
+            }
+        }
         
     }
 }
