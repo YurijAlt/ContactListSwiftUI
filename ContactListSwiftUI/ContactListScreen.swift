@@ -12,20 +12,16 @@ struct ContactListScreen: View {
     let contactList = Person.getContactList()
     
     var body: some View {
-        ZStack {
-            Image(systemName: "person.3")
-                .resizable()
-                .frame(width: 300, height: 250)
-                .opacity(0.1)
-            Text("Placeholder")
-            List {
-                ForEach(contactList) { person in
+        NavigationView {
+            List(contactList) { person in
+                NavigationLink(destination: DetailInfoScreen(contact: person)) {
                     Text(person.fullName)
                 }
             }
+            .navigationBarTitle(Text("Contact List"))
         }
-        
     }
+    
 }
 
 struct ContactList_Previews: PreviewProvider {
