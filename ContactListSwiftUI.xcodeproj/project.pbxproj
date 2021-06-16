@@ -16,6 +16,7 @@
 		C40CE2AE2677F58700C62D1E /* ContactListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CE2AD2677F58700C62D1E /* ContactListScreen.swift */; };
 		C40CE2B22677F5C500C62D1E /* DetailInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CE2B12677F5C500C62D1E /* DetailInfoScreen.swift */; };
 		C40CE2B42677F78100C62D1E /* ContactWithNumberScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40CE2B32677F78100C62D1E /* ContactWithNumberScreen.swift */; };
+		C41589F8267A895A003DC60F /* RowConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41589F7267A895A003DC60F /* RowConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C40CE2AD2677F58700C62D1E /* ContactListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListScreen.swift; sourceTree = "<group>"; };
 		C40CE2B12677F5C500C62D1E /* DetailInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoScreen.swift; sourceTree = "<group>"; };
 		C40CE2B32677F78100C62D1E /* ContactWithNumberScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWithNumberScreen.swift; sourceTree = "<group>"; };
+		C41589F7267A895A003DC60F /* RowConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				C40CE29C2677EA9200C62D1E /* ContentView.swift */,
 				C40CE2AD2677F58700C62D1E /* ContactListScreen.swift */,
 				C40CE2B32677F78100C62D1E /* ContactWithNumberScreen.swift */,
+				C41589F7267A895A003DC60F /* RowConfiguration.swift */,
 				C40CE2B12677F5C500C62D1E /* DetailInfoScreen.swift */,
 				C40CE29E2677EA9400C62D1E /* Assets.xcassets */,
 				C40CE2A32677EA9400C62D1E /* Info.plist */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40CE2B22677F5C500C62D1E /* DetailInfoScreen.swift in Sources */,
+				C41589F8267A895A003DC60F /* RowConfiguration.swift in Sources */,
 				C40CE2B42677F78100C62D1E /* ContactWithNumberScreen.swift in Sources */,
 				C40CE29D2677EA9200C62D1E /* ContentView.swift in Sources */,
 				C40CE2AA2677EF6900C62D1E /* DataManager.swift in Sources */,

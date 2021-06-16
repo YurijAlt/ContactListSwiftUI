@@ -13,18 +13,12 @@ struct ContactWithNumberScreen: View {
     
     var body: some View {
         NavigationView {
-            List(contactList) { person in
-                VStack {
-                    HStack {
-                        Image(systemName: "phone.circle")
-                        Text("\(person.phoneNumber)")
-                    }
-                    HStack {
-                        Image(systemName: "envelope.circle")
-                        Text("\(person.email)")
-                    }
+            List {
+                ForEach(contactList) { person in
+                    Section(header: Text("\(person.fullName)"), content: {})
+                    RowConfiguration(content: "\(person.phoneNumber)", imageName: "phone.circle")
+                    RowConfiguration(content: "\(person.email)", imageName: "envelope.circle")
                 }
-                
             }
             .navigationBarTitle(Text("Contact List"))
         }

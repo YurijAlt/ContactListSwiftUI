@@ -13,25 +13,23 @@ struct DetailInfoScreen: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "person.crop.circle")
-                .resizable()
-                .frame(width: 150, height: 150)
-                .opacity(0.4)
             List {
-                Section(header: Text("\(contact.fullName)")) {
-                }
                 HStack {
-                    Image(systemName: "phone.circle")
-                    Text("\(contact.phoneNumber)")
+                    Spacer()
+                    Image(systemName: "person.crop.circle")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .padding()
+                    Spacer()
                 }
-                HStack {
-                    Image(systemName: "envelope.circle")
-                    Text("\(contact.email)")
-                }
+                RowConfiguration(content: "\(contact.phoneNumber)", imageName: "phone.circle")
+                RowConfiguration(content: "\(contact.email)", imageName: "envelope.circle")
             }
+            
         }
-        .navigationBarTitle(Text("Details"))
+        .navigationBarTitle(Text("\(contact.fullName)"))
     }
+    
 }
 
 struct DetailInfo_Previews: PreviewProvider {
