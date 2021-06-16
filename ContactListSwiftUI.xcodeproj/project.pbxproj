@@ -64,16 +64,11 @@
 		C40CE2992677EA9200C62D1E /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				C40CE2A92677EF6900C62D1E /* DataManager.swift */,
-				C40CE2AB2677EFCE00C62D1E /* Person.swift */,
-				C40CE29A2677EA9200C62D1E /* ContactListSwiftUIApp.swift */,
-				C40CE29C2677EA9200C62D1E /* ContentView.swift */,
-				C40CE2AD2677F58700C62D1E /* ContactListScreen.swift */,
-				C40CE2B32677F78100C62D1E /* ContactWithNumberScreen.swift */,
-				C41589F7267A895A003DC60F /* RowConfiguration.swift */,
-				C40CE2B12677F5C500C62D1E /* DetailInfoScreen.swift */,
-				C40CE29E2677EA9400C62D1E /* Assets.xcassets */,
-				C40CE2A32677EA9400C62D1E /* Info.plist */,
+				C41589F9267A989E003DC60F /* Models */,
+				C41589FA267A9904003DC60F /* Services */,
+				C41589FD267A9A12003DC60F /* Views */,
+				C41589FC267A99BA003DC60F /* Source */,
+				C41589FB267A994E003DC60F /* SupportingFiles */,
 				C40CE2A02677EA9400C62D1E /* Preview Content */,
 			);
 			path = ContactListSwiftUI;
@@ -85,6 +80,51 @@
 				C40CE2A12677EA9400C62D1E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C41589F9267A989E003DC60F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C40CE2AB2677EFCE00C62D1E /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C41589FA267A9904003DC60F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C40CE2A92677EF6900C62D1E /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C41589FB267A994E003DC60F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C40CE2A32677EA9400C62D1E /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C41589FC267A99BA003DC60F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C40CE29E2677EA9400C62D1E /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C41589FD267A9A12003DC60F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C40CE29A2677EA9200C62D1E /* ContactListSwiftUIApp.swift */,
+				C40CE29C2677EA9200C62D1E /* ContentView.swift */,
+				C40CE2AD2677F58700C62D1E /* ContactListScreen.swift */,
+				C40CE2B32677F78100C62D1E /* ContactWithNumberScreen.swift */,
+				C41589F7267A895A003DC60F /* RowConfiguration.swift */,
+				C40CE2B12677F5C500C62D1E /* DetailInfoScreen.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +335,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ContactListSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = MF2X2E877U;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ContactListSwiftUI/Info.plist;
+				INFOPLIST_FILE = ContactListSwiftUI/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.yura-chekalyuk.TrafficLightOnSwiftUI.ContactListSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +357,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ContactListSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = MF2X2E877U;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ContactListSwiftUI/Info.plist;
+				INFOPLIST_FILE = ContactListSwiftUI/SupportingFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.yura-chekalyuk.TrafficLightOnSwiftUI.ContactListSwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

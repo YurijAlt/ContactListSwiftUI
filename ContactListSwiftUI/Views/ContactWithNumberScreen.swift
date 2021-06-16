@@ -16,6 +16,7 @@ struct ContactWithNumberScreen: View {
             List {
                 ForEach(contactList) { person in
                     Section(header: Text("\(person.fullName)"), content: {})
+                        .textCase(.none)
                     RowConfiguration(content: "\(person.phoneNumber)", imageName: "phone.circle")
                     RowConfiguration(content: "\(person.email)", imageName: "envelope.circle")
                 }
