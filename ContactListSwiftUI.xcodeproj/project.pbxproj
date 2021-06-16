@@ -121,8 +121,8 @@
 				C40CE29C2677EA9200C62D1E /* ContentView.swift */,
 				C40CE2AD2677F58700C62D1E /* ContactListScreen.swift */,
 				C40CE2B32677F78100C62D1E /* ContactWithNumberScreen.swift */,
-				C41589F7267A895A003DC60F /* RowConfiguration.swift */,
 				C40CE2B12677F5C500C62D1E /* DetailInfoScreen.swift */,
+				C41589F7267A895A003DC60F /* RowConfiguration.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
