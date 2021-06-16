@@ -22,6 +22,6 @@ struct RowConfiguration: View {
 
 struct RowConfiguration_Previews: PreviewProvider {
     static var previews: some View {
-        RowConfiguration(content: "8995434343", imageName: "phone.circle")
+        RowConfiguration(content: "89954354343", imageName: "phone.circle")
     }
 }
