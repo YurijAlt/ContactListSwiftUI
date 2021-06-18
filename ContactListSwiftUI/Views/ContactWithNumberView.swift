@@ -16,10 +16,15 @@ struct ContactWithNumberView: View {
             List {
                 ForEach(contacts) { person in
                     Section(header: Text(person.fullName)) {
-                        RowConfiguration(content: "\(person.phoneNumber)", imageName: "phone.circle")
-                        RowConfiguration(content: "\(person.email)", imageName: "envelope.circle")
+                        RowConfiguration(
+                            content: "\(person.phoneNumber)",
+                            imageName: "phone.circle"
+                        )
+                        RowConfiguration(
+                            content: "\(person.email)",
+                            imageName: "envelope.circle"
+                        )
                     }
-                    
                 }
                 .textCase(.none)
             }

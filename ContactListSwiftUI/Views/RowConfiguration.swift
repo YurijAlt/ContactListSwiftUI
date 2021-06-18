@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RowConfiguration: View {
+    
     let content: String
     let imageName: String
     
@@ -22,6 +23,6 @@ struct RowConfiguration: View {
 
 struct RowConfiguration_Previews: PreviewProvider {
     static var previews: some View {
-        RowConfiguration(content: "89954354343", imageName: Person.getContactList().first!.email)
+        RowConfiguration(content: "89954354343", imageName: "envelope.circle")
     }
 }

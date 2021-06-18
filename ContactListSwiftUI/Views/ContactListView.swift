@@ -21,7 +21,6 @@ struct ContactListView: View {
             .navigationBarTitle(Text("Contact List"))
         }
     }
-    
 }
 
 struct ContactList_Previews: PreviewProvider {
