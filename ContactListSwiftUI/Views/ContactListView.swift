@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ContactListScreen: View {
+struct ContactListView: View {
     
-    let contactList = Person.getContactList()
+    let contacts: [Person]
     
     var body: some View {
         NavigationView {
-            List(contactList) { person in
-                NavigationLink(destination: DetailInfoScreen(contact: person)) {
+            List(contacts) { person in
+                NavigationLink(destination: DetailInfoView(contact: person)) {
                     Text(person.fullName)
                 }
             }
@@ -26,6 +26,6 @@ struct ContactListScreen: View {
 
 struct ContactList_Previews: PreviewProvider {
     static var previews: some View {
-        ContactListScreen()
+        ContactListView(contacts: Person.getContactList())
     }
 }

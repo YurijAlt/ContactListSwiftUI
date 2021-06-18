@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailInfoScreen: View {
+struct DetailInfoView: View {
     
     let contact: Person
     
@@ -34,6 +34,6 @@ struct DetailInfoScreen: View {
 
 struct DetailInfo_Previews: PreviewProvider {
     static var previews: some View {
-        DetailInfoScreen(contact: Person.getContactList()[0])
+        DetailInfoView(contact: Person.getContactList().first!)
     }
 }
